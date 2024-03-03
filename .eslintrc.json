@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "airbnb", // Use the Airbnb style guide for JavaScript
+    "prettier", // Integrate Prettier formatting rules
+    "plugin:node/recommended" // Use recommended rules for Node.js
+  ],
+  "plugins": ["prettier"], // Use the Prettier plugin for ESLint
+  "rules": {
+    // Customize ESLint rules
+    //"prettier/prettier": "error", // Enforce Prettier formatting rules
+    "spaced-comment": "off", // Disable the rule enforcing consistent spacing in comments
+    "no-console": "warn", // Warn about the use of console statements
+    "consistent-return": "off", // Allow inconsistent return statements in functions
+    "func-names": "off", // Allow anonymous function expressions
+    "object-shorthand": "off", // Allow non-shorthand property and method definitions
+    "no-process-exit": "off", // Allow the use of process.exit()
+    "no-param-reassign": "off", // Allow reassigning function parameters
+    "no-return-await": "off", // Allow using return with await
+    "no-underscore-dangle": "off", // Allow underscores in variable and function names
+    "class-methods-use-this": "off", // Allow class methods that don't use 'this'
+    "prefer-destructuring": ["error", { "object": true, "array": false }], // Prefer object destructuring where possible
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }] // Ignore certain variables for the unused variables rule
+  }
+}
